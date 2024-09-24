@@ -49,7 +49,7 @@
             runtimeInputs = with pkgs; [ live-server ];
 
             text = ''
-              live-server -p 8080 ./src
+              live-server -p 8080 ./docs
             '';
           };
         }
