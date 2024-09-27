@@ -1,1 +1,107 @@
-h1 { color: blue; } body { color: black; }
+header {
+	background: rgb(208, 168, 55);
+	background: radial-gradient(circle, rgba(208, 168, 55, 1) 0%, rgba(255, 205, 75, 1) 1%);
+	background-position-y: top -50px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: .25em 1em;
+	position: relative;
+	background-size: contain;
+}
+
+main {
+	margin: auto;
+	max-width: 800px;
+	background: white;
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+}
+
+#language-selector {
+	position: absolute;
+	bottom: 2px;
+	right: 6px;
+}
+
+#language-selector>a {
+	text-decoration: none;
+	filter: grayscale(1);
+}
+
+#language-selector>a.selected {
+	filter: grayscale(0);
+}
+
+#language-selector>a:hover {
+	filter: brightness(1.5) grayscale(0);
+}
+
+#main-content {
+	margin: 1em;
+}
+
+header>hgroup>h1,
+header>hgroup>p {
+	color: white;
+	text-shadow: black 2px 2px 2px;
+}
+
+nav {
+	box-sizing: border-box;
+	background: #7070c2;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+body {
+	background: rgb(128, 128, 128);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(128, 128, 128, 1) 90%);
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+nav>a {
+	flex: 1 1 0;
+	border-right: 1px solid black;
+	color: black;
+	padding: .25em;
+	text-decoration: none;
+
+	background: rgb(34, 85, 195);
+	background: linear-gradient(0deg, rgba(34, 85, 195, 1) 0%, rgba(194, 160, 255, 1) 100%);
+}
+
+nav>a:hover {
+	color: white;
+	text-shadow: black 1px 1px;
+	background: rgb(72, 111, 195);
+	background: linear-gradient(0deg, rgba(72, 111, 195, 1) 0%, rgba(202, 174, 255, 1) 100%);
+}
+
+nav>a:last-of-type {
+	border: none;
+}
+
+
+
+footer {
+	padding: .25em .5em;
+}
+
+#footer-separator {
+	border: none;
+	height: 25px;
+	margin-top: 2em;
+	background: linear-gradient(0deg,
+			rgba(255, 255, 255, .0) 0%,
+			rgba(34, 85, 195, .25) 50%,
+			rgba(255, 255, 255, .0) 100%);
+}
+
+#notice-box {
+	background: #ffa;
+	border: 2px solid yellow;
+	padding: .25em .5em;
+}
+#notice-box>p:first-of-type { margin: 0; }
+#notice-box>p:first-of-type::before { content: 'Note: '; }
